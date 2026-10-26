@@ -4,7 +4,7 @@
 
 [glsec](https://github.com/glsec/glsec) scans GitLab CI/CD pipelines. Its SARIF output (`--format sarif`) works with GitHub code scanning, for a GitLab pipeline file that lives in a GitHub repository, or a mirror of a GitLab project. Each finding becomes a code scanning alert, and on a pull request it shows up as an annotation on the changed line. Each rule links to its page on [glsec.github.io](https://glsec.github.io/rules/).
 
-The demo pull request [#1](../../pull/1) changes `bad-pipeline.yml` from a clean pipeline into one with the kind of mistakes glsec reports. It stays open on purpose.
+The demo pull request [#2](../../pull/2) changes `bad-pipeline.yml` from a clean pipeline into one with the kind of mistakes glsec reports. It stays open on purpose.
 
 ## The workflow
 
