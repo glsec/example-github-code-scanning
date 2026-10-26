@@ -1,0 +1,12 @@
+# The same service before the changes in the demo pull request: no findings.
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+test:
+  image: node:22.11.0
+  script:
+    - npm ci
+    - npm test
